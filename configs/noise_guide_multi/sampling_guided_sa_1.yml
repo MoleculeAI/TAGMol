@@ -1,0 +1,21 @@
+model:
+  checkpoint: ./pretrained_models/pretrained_diffusion.pt
+
+guide_models:
+  - name: sa
+    checkpoint: ./logs/training_dock_guide_sa_2024_01_20__15_38_49/checkpoints/162000.pt
+    weight: 1
+    guide_kind: Kd
+    gradient_scale_cord: 5
+    gradient_scale_categ: 0.0 #1e-10
+    clamp_pred_max: 1.0
+
+
+sample:
+  seed: 2021
+  num_samples: 100
+  num_steps: 1000
+  pos_only: False
+  center_pos_mode: protein
+  sample_num_atoms: prior
+
