@@ -6,13 +6,12 @@
 
 ---
 
-## Installation
-
-### Dependency
+## Environment Setup
 
 The code has been tested in the following environment:
 
-### Install via Conda and Pip
+<!-- ### Install via Conda and Pip -->
+
 ```bash
 conda create -n tagmol python=3.8.17
 conda activate tagmol
@@ -25,11 +24,11 @@ pip install meeko==0.1.dev3 scipy pdb2pqr vina==1.2.2
 python -m pip install git+https://github.com/Valdes-Tresanco-MS/AutoDockTools_py3
 ```
 
-### (Alternatively) Install with .yml file
+<!-- ### (Alternatively) Install with .yml file -->
 
-```bash
+<!-- ```bash
 conda env create -f environment.yml
-```
+``` -->
 
 **IMPORTANT NOTE:** You might have to do the following to append the path of the root working directory.
 ```bash
